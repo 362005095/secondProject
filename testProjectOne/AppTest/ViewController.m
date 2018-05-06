@@ -38,6 +38,12 @@
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
 }
 
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    //这是likui的viewdidappear
+}
+
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 1;
